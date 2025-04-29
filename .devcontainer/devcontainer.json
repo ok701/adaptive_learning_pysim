@@ -1,0 +1,23 @@
+{
+  "name": "Miniconda Dev Container",
+  "image": "continuumio/miniconda3",
+
+  "customizations": 
+  {
+    "vscode": 
+    {
+      "extensions": 
+      [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "runArgs": 
+  [
+    // Set DISPLAY environment variable for X forwarding
+    "--env=DISPLAY=host.docker.internal:0"
+  ],
+  "postCreateCommand": "conda env create -f environment.yml && conda clean -afy"
+}
+  

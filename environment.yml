@@ -1,0 +1,11 @@
+name: cdrr
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - ipykernel
+  - scipy
+  - numpy
+  - jupyter
+  - matplotlib
+  - python=3.10
